@@ -1,36 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buscador de CEP</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <title>Consulta CEP</title>
+    <link rel="stylesheet">
 </head>
-
 <body>
-    <!--background animado-->
-
-    <div>
-        <div class="wave"></div>
-        <div class="wave"></div>
-        <div class="wave"></div>
+    <div class="container">
+        <h1>Consultando CEP</h1>
+        <form>
+            <div class="form-group">
+                <label for="cep">CEP</label>
+                <input type="text" class="form-control" maxlength="9" id="cep">
+                <small>00000-000</small>
+            </div>
+            <div class="form-group">
+                <label for="logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro">
+                <small>Rua.</small>
+            </div>
+            <div class="form-group">
+                <label for="bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro">
+                <small>Bairro</small>
+            </div>
+            <div class="form-group">
+                <label for="localidade">Localidade</label>
+                <input type="text" class="form-control" id="localidade">
+                <small>Cidade</small>
+            </div>
+            <div class="form-group">
+                <label for="uf">UF</label>
+                <input type="text" class="form-control" id="uf">
+                <small>Estado</small>
+            </div>
+        </form>
     </div>
-
-    <div id="title">Consulta de CEP</div>
-    <span id="sub-title">Insira o CEP </span><input type="text" id="cepInsert" placeholder="Insira o CEP aqui">
-    <div id="itens">
-        <div id="itens1">
-            <input type="text" placeholder="Logradouro" id="logradouro">
-            <input type="text" placeholder="Cidade" id="cidade">
-        </div>
-        <div id="itens2">
-            <input type="text" placeholder="Estado" id="estado">
-            <input type="text" placeholder="UF" id="uf">
-        </div>
-    </div>
-
+    <script src="src/js/main.js"></script>
 </body>
-
 </html>
