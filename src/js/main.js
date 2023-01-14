@@ -23,5 +23,6 @@ cep.addEventListener("blur",(e)=>{
     .then(response =>{ response.json()
         .then( data => showData(data))
     })
-    .catch(e => console.log('Deu Erro: '+ e,message))
+    
+    .catch((e) => alert("CEP INFORMADO É INVALIDO",e.message))
 })
