@@ -5,35 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Consulta CEP</title>
     <link rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+
         <h1>Consultando CEP</h1>
-        <form>
+        <form class="all">
             <div class="form-group">
-                <label for="cep">CEP</label>
+                <label class="cep" for="cep">CEP</label>
                 <input type="text" class="form-control" maxlength="9" id="cep">
-                <small>00000-000</small>
+                
             </div>
             <div class="form-group">
-                <label for="logradouro">Logradouro</label>
+                <label class="logradouro" for="logradouro">Logradouro</label>
                 <input type="text" class="form-control" id="logradouro">
-                <small>Rua.</small>
+                
             </div>
             <div class="form-group">
-                <label for="bairro">Bairro</label>
+                <label class="bairro" for="bairro">Bairro</label>
                 <input type="text" class="form-control" id="bairro">
-                <small>Bairro</small>
+                
             </div>
             <div class="form-group">
-                <label for="localidade">Localidade</label>
+                <label class="localidade" for="localidade">Localidade</label>
                 <input type="text" class="form-control" id="localidade">
-                <small>Cidade</small>
+                
             </div>
             <div class="form-group">
-                <label for="uf">UF</label>
+                <label class="uf" for="uf">UF</label>
                 <input type="text" class="form-control" id="uf">
-                <small>Estado</small>
+                
             </div>
         </form>
     </div>
